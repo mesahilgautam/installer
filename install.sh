@@ -77,7 +77,15 @@ function packageInstall() {
         "neovim"
         "npm"
         "make"
+
+        # dwm dependencies
+        "base-devel"
+        "libx11"
+        "libxft"
+        "libxinerama"
+        "freetype2"
         "ttf-twemoji"
+        "fontconfig"
         "openssh"
         "patch"
         "which"
