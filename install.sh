@@ -38,6 +38,7 @@ function setup() {
 
     # Decrypt the ssh key
     cp -r ~/installer/.ssh ~/.ssh
+    rm -rf ~/installer
     chmod 600 ~/.ssh/id_ed25519
     ansible-vault decrypt ~/.ssh/id_ed25519
 
