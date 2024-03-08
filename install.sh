@@ -16,6 +16,7 @@ function setup() {
     mkdir -p ~/.config
     mkdir -p ~/.local
     mkdir -p ~/.cache
+    mkdir -p ~/repos
 
 
     # trackpad settings
@@ -41,6 +42,7 @@ function setup() {
 
     # Clone back the installer
     git clone git@github.com:mesahilgautam/installer.git ~/.local/src/installer
+    git clone git@github.com:mesahilgautam/files.git ~/files
 
     # light
     sudo usermod -aG video $USER
@@ -64,7 +66,6 @@ function packageInstall() {
         "libpulse"
 
         "neovim"
-        "clang"
         "npm"
         "make"
         "ansible"
@@ -83,15 +84,13 @@ function packageInstall() {
         "zsh"
         "zsh-syntax-highlighting-git"
         "yt-dlp"
-        "newsboat"
-        "yt-dlp"
         "delta-git"
         "btop"
         "xdotool"
-        "gtypist"
+        # "gtypist"
         "thunar"
         "tmux"
-        "docker"
+        # "docker"
         "unzip"
         "ripgrep"
         "delta-git"
@@ -104,12 +103,12 @@ function packageInstall() {
         "pavucontrol"
         # "wal" # pywal
         # "mpv"
-        "lua"
+        # "lua"
         "gcc"
         "g++"
-        "go"
+        # "go"
         # "fzf"
-        "pyenv" # to manage different python versions
+        # "pyenv" # to manage different python versions
         # "lazygit" # a minimal terminal based git client(ish) [maybe]
         # "mkdocs"
         # "mdp"
@@ -146,10 +145,8 @@ packageInstall
 setup
 
 
-
-
-
-
-
-
-
+# ~/.dotfiles
+# ~/files
+# ~/repos
+#     libreoffice
+#     ...
