@@ -48,6 +48,7 @@ function setup() {
     cd ~/.dotfiles && stow .
     cd
 
+    chmod 400 ~/.ssh/id_ed25519
     # Clone back the installer
     git clone git@github.com:mesahilgautam/installer.git ~/.local/src/installer
     git clone git@github.com:mesahilgautam/files.git ~/files
