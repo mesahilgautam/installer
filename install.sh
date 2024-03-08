@@ -13,6 +13,11 @@ function setup() {
     [[ -d  "~/.tmux" ]] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
     # Create Base Directories
+    rm -rf ~/.config 
+    rm -rf ~/.local 
+    rm -rf ~/.cache 
+    rm -rf ~/repos
+
     mkdir -p ~/.config
     mkdir -p ~/.local
     mkdir -p ~/.cache
@@ -71,6 +76,7 @@ function packageInstall() {
         "neovim"
         "npm"
         "make"
+        "openssh"
         "patch"
         "which"
         "ansible"
