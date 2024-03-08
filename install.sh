@@ -56,10 +56,10 @@ function setup() {
     # light
     sudo usermod -aG video $USER
     /home/$USER/.local/bin/buildsuckless
+
+    sudo cp /usr/share/fontconfig/conf.avail/75-twemoji.conf /etc/fonts/conf.d/
+
     reboot
-
-
-    # group settings
 }
 
 
@@ -77,6 +77,7 @@ function packageInstall() {
         "neovim"
         "npm"
         "make"
+        "ttf-twemoji"
         "openssh"
         "patch"
         "which"
