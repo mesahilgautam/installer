@@ -39,7 +39,9 @@ function setup() {
     # Clone the .dotfiles directory
     git clone git@github.com:mesahilgautam/.dotfiles.git ~/.dotfiles
     rm -rf ~/.ssh
-    stow --dir=~/.dotfiles --target=~/
+
+    cd ~/.dotfiles && stow .
+    cd
 
     # Clone back the installer
     git clone git@github.com:mesahilgautam/installer.git ~/.local/src/installer
@@ -122,6 +124,8 @@ function packageInstall() {
         # ""
         # ""
     )
+
+    sudo pacman -Syu
 
     for name in ${packages[@]}
     do
