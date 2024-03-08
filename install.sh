@@ -10,7 +10,7 @@ function setup() {
     sudo chsh -s $(which zsh)
 
     # Clone TPM (tmux plugin manager)
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    [[ -d  "~/.tmux" ]] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
     # Create Base Directories
     mkdir -p ~/.config
@@ -33,6 +33,7 @@ function setup() {
 
     # Decrypt the ssh key
     cp -r ~/installer/.ssh ~/.ssh
+    chmod 600 ~/.ssh/id_ed25519
     ansible-vault decrypt ~/.ssh/id_ed25519
 
     # Clone the .dotfiles directory
