@@ -68,6 +68,8 @@ function packageInstall() {
         "neovim"
         "npm"
         "make"
+        "patch"
+        "which"
         "ansible"
         "stow"
         "thunderbird"
