@@ -50,9 +50,12 @@ function setup() {
     cd
 
     chmod 400 ~/.ssh/id_ed25519
+
     # Clone back the installer
     git clone git@github.com:mesahilgautam/installer.git ~/.local/src/installer
     git clone git@github.com:mesahilgautam/files.git ~/files
+    git clone git@github.com:mesahilgautam/website.git ~/repos/website
+    git clone git@github.com:mesahilgautam/mesahilgautam.github.io.git ~/repos/.mesahilgautam.github.io
 
     # light
     sudo usermod -aG video $USER
