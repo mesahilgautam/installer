@@ -22,6 +22,7 @@ function setup() {
     mkdir -p ~/.local
     mkdir -p ~/.cache
     mkdir -p ~/repos
+    mkdir -p ~/downloads
 
 
     # trackpad settings
